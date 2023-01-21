@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/3xplOr3r/interactive-rating-component)
+- Live Site URL: [netlify](https://meek-moxie-68b4fc.netlify.app)
 
 
 ### Built with
@@ -42,7 +42,7 @@ Users should be able to:
 
 ## Author
 
-- Facebook - [Add your name here](https://www.facebook.com/nu11byt3/)
+- Facebook - [Biplob Ahmed](https://www.facebook.com/nu11byt3/)
 - Frontend Mentor - [@3xplOr3r](https://www.frontendmentor.io/profile/3xp1Or3r)
 - Github - [@3xp1Or3r](https://github.com/3xplOr3r/)
 
