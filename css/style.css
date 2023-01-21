@@ -1,0 +1,206 @@
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --main-bg: #141519;
+    --card-bg: #1e252f;
+    --star-bg: #272e38;
+    --para-bg: #898f9b;
+    --font-para: 15px;
+    --font-family: 'Overpass', sans-serif;
+    --font-bold: 700;
+    --font-light: 400;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+.wrapper {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-card {
+    width: 90%;
+    border-radius: 40px;
+    background-color: var(--card-bg);
+    position: relative;
+    padding: 32px;
+}
+
+.star-icon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--star-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-contents {
+    padding-top: 70px;
+}
+
+.card-contents h1 {
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: var(--font-bold);
+    color: var(--White);
+}
+
+.card-contents p {
+    font-family: var(--font-family);
+    font-size: var(--font-para);
+    font-weight: var(--font-light);
+    color: var(--para-bg);
+    padding-top: 20px;
+    line-height: 1.4rem;
+}
+
+.rating-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+    padding-right: 10px;
+}
+
+.circle {
+    background-color: var(--star-bg);
+    color: var(--para-bg);
+    border-radius: 50%;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all .4s ease;
+}
+
+.circle:hover {
+    background-color: var(--para-bg);
+    color: var(--White);
+}
+
+.circle:active {
+    background-color: var(--primary-color);
+    color: var(--White);
+}
+
+.selected {
+    background-color: var(--primary-color);
+    color: var(--White);
+  }
+
+.submit {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--White);
+    background-color: var(--primary-color);
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.submit:hover {
+    color: var(--primary-color);
+    background-color: var(--White);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.thankyou img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thankyou .rating {
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    transform: translateX(-50%);
+    background-color: var(--star-bg);
+    color: var(--primary-color);
+    border-radius: 1em;
+    padding: 0.4em 1.3em;
+    display: inline-block;
+    font-size: 15px;
+    width: 60%;
+    text-align: center;
+  }
+
+.thankyou_text {
+    padding-top: 180px;
+    text-align: center;
+}
+
+ .thankyou_text p {
+    font-family: var(--font-family);
+    font-size: var(--font-para);
+    font-weight: var(--font-light);
+    color: var(--para-bg);
+    line-height: 1.4rem;
+    padding: 0px 10px;
+}
+
+.thankyou_text h1 {
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: var(--font-bold);
+    color: var(--White);
+    padding: 20px 0px;
+}
+
+.thankyou {
+    display: none;
+}
+
+.attribution {
+    color: var(--White);
+}
+
+.attribution a{
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 500px) {
+    .rating-card {
+        width: 400px;
+    }
+    .card-contents {
+        width: 90%;
+    }
+}
